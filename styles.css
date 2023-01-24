@@ -1,0 +1,392 @@
+/* General Styles */
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+section {
+  padding: 20px;
+}
+
+/* Section 1 Styles */
+
+.title {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  z-index: 2;
+
+  color: #f7e9f2;
+}
+.heading {
+  padding-top: 100px;
+  font-size: 6vw;
+  width: auto;
+  font-weight: 900;
+  text-align: left;
+  margin-bottom: -30px;
+}
+.subheading {
+  font-size: 4vw;
+  margin-bottom: 20px;
+}
+.description {
+  text-align: justify;
+  font-size: 1.2vw;
+  line-height: 1.5;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+.frosted-1:hover {
+  transform: scale(1.02);
+}
+.frosted-2:hover {
+  transform: scale(1.02);
+}
+.frosted-3:hover {
+  transform: scale(1.2);
+}
+.frosted-4:hover {
+  transform: scale(1.2);
+}
+
+.frosted-1 {
+  transition: all 300ms ease-in;
+  top: -20vh;
+  left: 120vh;
+  display: flex;
+  position: absolute;
+  z-index: 10;
+  background: linear-gradient(
+    90deg,
+    rgba(64, 4, 124, 0.384) 0%,
+    rgba(7, 242, 156, 0.767) 100%
+  );
+  backdrop-filter: blur(10px);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  border-color: black;
+
+  width: 100vh;
+  height: 100vh;
+
+  padding: 10px;
+  border-radius: 50%;
+}
+.frosted-2 {
+  transition: all 300ms ease-in;
+  top: -30vh;
+  left: 100vh;
+  display: flex;
+  position: absolute;
+  z-index: 11;
+  background: linear-gradient(
+    90deg,
+    rgba(109, 81, 164, 0.904) 0%,
+    rgba(227, 165, 196, 0.808) 100%
+  );
+  backdrop-filter: blur(10px);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  border-color: black;
+
+  width: 50vh;
+  height: 50vh;
+
+  padding: 10px;
+  border-radius: 50%;
+}
+.frosted-3 {
+  transition: all 300ms ease-in;
+  top: 40vh;
+  left: 110vh;
+  display: flex;
+  position: absolute;
+  z-index: 12;
+  background: linear-gradient(
+    90deg,
+    rgba(252, 170, 93, 0.267) 0%,
+    rgba(238, 185, 71, 0.082) 100%
+  );
+
+  backdrop-filter: blur(8px);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  border-color: black;
+
+  width: 11vh;
+  height: 11vh;
+
+  padding: 10px;
+  border-radius: 50%;
+}
+.frosted-4 {
+  transition: all 300ms ease-in;
+  top: 10vh;
+  left: 140vh;
+  display: flex;
+  position: absolute;
+  z-index: 13;
+  background: rgba(136, 136, 136, 0.178);
+  backdrop-filter: blur(8px);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  border-color: black;
+
+  width: 15vh;
+  height: 15vh;
+
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.static-btn {
+  font-weight: 400;
+  color: #4b4649fd;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: #f6f4f7;
+  margin-right: 10px;
+  cursor: pointer;
+  border: 1.5px solid black;
+  border-color: #f7e9f2;
+}
+
+.animated-btn {
+  font-weight: 400;
+  color: #f7e9f2;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: #fcfcfc00;
+  margin-right: 10px;
+  cursor: pointer;
+  border: 1.5px solid black;
+  border-color: #f7e9f2;
+}
+
+.static-btn:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #f7e9f2;
+}
+.animated-btn:hover {
+  background-color: #f7e9f2;
+  color: #4b4649fd;
+}
+
+/* Section 2 Styles */
+.cards {
+  position: relative;
+  z-index: 14;
+  display: flex;
+  flex-wrap: wrap;
+  opacity: 1;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+.card-1 {
+  background-image: linear-gradient(
+    to right bottom,
+    #fcb429,
+    #ff9d2d,
+    #ff8637,
+    #ff6e42,
+    #fd564f,
+    #f94758,
+    #f33961,
+    #ec2a6a,
+    #e82172,
+    #e3187a,
+    #dd1282,
+    #d60e8a
+  );
+}
+.card-2 {
+  background-image: linear-gradient(
+    to right bottom,
+    #fd8d48,
+    #fe7352,
+    #fa5861,
+    #ef3f72,
+    #dd2b84,
+    #d01c8e,
+    #bf1398,
+    #aa13a3,
+    #9e06a9,
+    #8f00b0,
+    #7c00b7,
+    #6507be
+  );
+}
+
+.card-3 {
+  background-image: linear-gradient(
+    to right bottom,
+    #cfe057,
+    #84d373,
+    #3bc08f,
+    #00a89f,
+    #008e9f,
+    #007f9f,
+    #006f9b,
+    #005f94,
+    #005498,
+    #0a4698,
+    #2f3594,
+    #491c8a
+  );
+}
+
+.card-4 {
+  background-image: linear-gradient(
+    to right bottom,
+    #f5532f,
+    #ed433d,
+    #e33548,
+    #d62952,
+    #c7205a,
+    #b9195f,
+    #ab1562,
+    #9b1465,
+    #8a1266,
+    #771266,
+    #651365,
+    #511462
+  );
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+  padding: 10px;
+  width: 150px;
+  height: 150px;
+  color: #fcf8fe;
+  display: flex;
+
+  align-items: flex-end;
+
+  margin: 10px 30px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.pcard {
+  font-size: 12px;
+
+  font-weight: 200;
+  text-shadow: rgb(0, 0, 0) 2px 0 10px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #fcf8fea4;
+  box-shadow: 0 4px 6px -8px #222;
+}
+/* Section 3 Styles */
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.generator-heading {
+  color: #f7e9f2;
+  font-size: 34px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.color-box {
+  display: flex;
+  margin: auto;
+  width: 40vw;
+  height: 15vh;
+  background-color: #a5b1ab;
+  border-radius: 5px;
+}
+
+.random-btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.color-input {
+  margin-right: 10px;
+}
+
+.generate-btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* angle button */
+.angle-60,
+.angle-10,
+.angle-15,
+.angle-20,
+.angle-30,
+.angle-40,
+.angle-45,
+.angle-50,
+.angle-0 {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.code {
+  display: inline-block;
+  text-align: left;
+
+  color: aliceblue;
+  overflow: auto;
+  border-radius: 10px;
+  background-color: rgb(41, 41, 41);
+}
+
+/* Gradient Background */
+section:nth-of-type(1) {
+  padding-top: 0px;
+  padding-bottom: 100px;
+
+  background-image: linear-gradient(
+    159deg,
+    #fe4b4e 0%,
+    #712178 45%,
+    #4d155d 100%
+  );
+}
+
+section:nth-of-type(2) {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+
+  background-color: #ffb300;
+  background-image: linear-gradient(
+    0deg,
+    #ffb300 0%,
+    #d22828 50%,
+    #292929 100%
+  );
+}
