@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradart</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <section>
+      <div>
+        <div class="title">
+          <h1 class="heading">
+            Gradart.
+            <h2 class="subheading">gradient generator</h2>
+          </h1>
+          <div class="frosted-1"></div>
+          <div class="frosted-2"></div>
+          <div class="frosted-3"></div>
+
+          <div class="frosted-4"></div>
+          <p class="description">
+            Gradart is a user-friendly and efficient website that offers a
+            convenient way to<br />create beautiful gradient backgrounds for
+            your website. It's a simple and<br />straightforward tool that
+            allows you to experiment with different color combinations<br />
+            and create unique and visually appealing gradients.
+          </p>
+
+          <div>
+            <button class="static-btn">2 color static</button>
+            <button class="animated-btn">animated</button>
+          </div>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card-1"><p class="pcard">Golden Horizon</p></div>
+        <div class="card-2"><p class="pcard">Rosewood Romance</p></div>
+        <div class="card-3"><p class="pcard">Ocean Ombre</p></div>
+        <div class="card-4"><p class="pcard">Crimson Sunset</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="generator-heading">create a gradient</h2>
+
+      <div>
+        <div class="color-box"></div>
+      </div>
+      <div class="flex">
+        <div>
+          <button class="random-btn">random</button>
+        </div>
+
+        <div>
+          <label for="favcolor"></label>
+          <input
+            class="color-input"
+            type="color"
+            id="favcolor"
+            name="favcolor"
+            value="#ff0000"
+          />
+        </div>
+
+        <div>
+          <label for="favcolor"></label>
+          <input
+            class="color-input"
+            type="color"
+            id="favcolor"
+            name="favcolor"
+            value="#fffff"
+          />
+        </div>
+      </div>
+      <div>
+        <button class="angle-60">60</button>
+        <button class="angle-10">10</button>
+        <button class="angle-15">15</button>
+        <button class="angle-20">20</button>
+        <button class="angle-30">30</button>
+        <button class="angle-40">40</button>
+        <button class="angle-45">45</button>
+        <button class="angle-50">50</button>
+        <button class="angle-0">0</button>
+      </div>
+
+      <div>
+        <button class="generate-btn">generate</button>
+      </div>
+
+      <pre class="code"><code>
+        .content{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }</code
+        >
+      </pre>
+    </section>
+  </body>
+</html>
