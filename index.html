@@ -23,14 +23,59 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="prism.css" />
+    <script defer src="prism.js"></script>
     <script defer src="script.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.js"></script>
+    <style type="text/css">
+      input {
+        font-weight: 400;
+        color: #4b4649fd;
+        padding: 10px 20px;
+        border-radius: 50px;
+        background-color: #f6f4f7;
+        width: 60px;
+
+        cursor: pointer;
+        border: 1.5px solid black;
+        border-color: #f7e9f2;
+      }
+
+      .circle button {
+        width: 30px;
+        height: 30px;
+        left: 5px;
+        right: auto;
+        border-radius: 50px;
+      }
+
+      .square .clr-field input,
+      .circle .clr-field input {
+        padding-left: 36px;
+      }
+
+      .circle .clr-field button {
+        border-radius: 50%;
+      }
+
+      .full .clr-field button {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+      }
+    </style>
   </head>
   <body>
     <section>
       <div>
         <div class="title">
           <h1 class="heading">
-            Gradart.
+            GradArt.
             <h2 class="subheading">gradient generator</h2>
           </h1>
           <div class="frosted-1"></div>
@@ -58,67 +103,111 @@
         <div class="card-3"><p class="pcard">Ocean Ombre</p></div>
         <div class="card-4"><p class="pcard">Crimson Sunset</p></div>
       </div>
-    </section>
 
-    <section>
       <h2 class="generator-heading">create a gradient</h2>
-
-      <div>
+      <p class="generator-text">
+        Pick the orientation, color and opacity of your need. More features will
+        be added soon.
+      </p>
+      <div class="part2">
         <div class="color-box"></div>
-      </div>
-      <div class="flex">
-        <div>
-          <button class="random-btn">random</button>
+        <div class="color-box2"></div>
+
+        <div class="flex">
+          <div class="circle">
+            <input
+              type="text"
+              class="coloris instance2"
+              id="color1"
+              value="#2a9d8f"
+            />
+          </div>
+
+          <div class="circle">
+            <input
+              type="text"
+              class="coloris instance2"
+              id="color2"
+              value="#f4a261"
+            />
+          </div>
+          <div>
+            <button class="random-btn">randomize gradient</button>
+          </div>
         </div>
 
-        <div>
-          <label for="favcolor"></label>
-          <input
-            class="color-input"
-            type="color"
-            id="favcolor"
-            name="favcolor"
-            value="#ff0000"
-          />
-        </div>
-
-        <div>
-          <label for="favcolor"></label>
-          <input
-            class="color-input"
-            type="color"
-            id="favcolor"
-            name="favcolor"
-            value="#fffff"
-          />
+        <div class="angle">
+          <button class="angle-1">0°</button>
+          <button class="angle-2">45°</button>
+          <button class="angle-3">90°</button>
+          <button class="angle-4">135°</button>
+          <button class="angle-5">180°</button>
+          <button class="angle-6">225°</button>
+          <button class="angle-7">270°</button>
+          <button class="angle-8">315°</button>
+          <button class="angle-0">radial</button>
         </div>
       </div>
-      <div>
-        <button class="angle-60">60</button>
-        <button class="angle-10">10</button>
-        <button class="angle-15">15</button>
-        <button class="angle-20">20</button>
-        <button class="angle-30">30</button>
-        <button class="angle-40">40</button>
-        <button class="angle-45">45</button>
-        <button class="angle-50">50</button>
-        <button class="angle-0">0</button>
+      <div class="copycode">
+        Here is your <span>CSS</span> code for the current gradient. you can
+        copy this and use it in your <span>CSS</span>.
       </div>
-
-      <div>
-        <button class="generate-btn">generate</button>
-      </div>
-
-      <pre class="code"><code>
-        .content{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-      }</code
+      <div class="codeblock">
+        <pre
+          class="line-numbers"
+        ><code class="language-css">background: linear-gradient(to right, rgb(42, 157, 143), rgb(244, 162, 97));/* in RGB */
+background: #a8ff78;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+</code
         >
       </pre>
+      </div>
     </section>
+    <script type="text/javascript">
+      /** Default configuration **/
+
+      Coloris({
+        el: ".coloris",
+        swatches: [
+          "#264653",
+          "#2a9d8f",
+          "#e9c46a",
+          "#f4a261",
+          "#e76f51",
+          "#d62828",
+          "#023e8a",
+          "#0077b6",
+          "#0096c7",
+          "#00b4d8",
+          "#48cae4",
+        ],
+      });
+
+      /** Instances **/
+
+      Coloris.setInstance(".instance1", {
+        theme: "pill",
+        themeMode: "light",
+        formatToggle: true,
+        closeButton: true,
+        clearButton: true,
+        swatches: [
+          "#067bc2",
+          "#84bcda",
+          "#80e377",
+          "#ecc30b",
+          "#f37748",
+          "#d56062",
+        ],
+      });
+
+      Coloris.setInstance(".instance2", { theme: "polaroid" });
+
+      Coloris.setInstance(".instance3", {
+        theme: "polaroid",
+        swatchesOnly: true,
+      });
+    </script>
   </body>
 </html>
