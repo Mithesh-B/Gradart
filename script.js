@@ -14,9 +14,11 @@ const degree315 = document.querySelector(".angle-8");
 const radial = document.querySelector(".angle-0");
 const randomizeBtn = document.querySelector(".random-btn");
 const outputCode = document.getElementById("css-code");
+const section2 = document.querySelector(".generator-heading");
+const staticBth = document.querySelector(".static-btn");
 /*default gradient value when website loads*/
 color1.value = "#2a9d8f";
-color2.value = "#f4a261";
+color2.value = "#f9a261";
 
 element.style.background = `linear-gradient(135deg, ${color1.value}, ${color2.value})`;
 
@@ -88,15 +90,24 @@ degree315.addEventListener("click", function () {
   currentGradient = "linear";
   updateColorWithDegree(degrees[7]);
 });
-radial.addEventListener("click", function () {
-  currentGradient = "radial";
-  element.style.background = `radial-gradient( ${colorValue1}, ${colorValue2})`;
-  const code = `background: radial-gradient(${colorValue1} 0%, ${colorValue2} 100%)`;
+/* this is a helper function to update css snippet */
+function radialUpdate(value1, value2) {
+  const code = `background: ${value2}; /* Fallback color */
+background: -webkit-radial-gradient(${value1} 0%, ${value2} 100%); /* Safari and Chrome */
+background: -moz-radial-gradient(${value1} 0%, ${value2} 100%); /* Firefox */
+background: radial-gradient(${value1} 0%, ${value2} 100%); /* Hexadecimal */`;
   const codeHighlight = outputCode;
 
   codeHighlight.innerHTML = code;
-
+  /* this highlights the css snippet, imported from prism.js */
   Prism.highlightElement(codeHighlight);
+}
+
+radial.addEventListener("click", function () {
+  currentGradient = "radial";
+  element.style.background = `radial-gradient( ${colorValue1}, ${colorValue2})`;
+
+  radialUpdate(colorValue1, colorValue2);
 });
 
 /*this functionm checks if event listners have linear or radial gradient and updates CSS accordingly*/
@@ -104,21 +115,17 @@ function updateColor(colorValue1, colorValue2, currentDegree) {
   if (currentGradient === "linear") {
     element.style.background = `linear-gradient(${currentDegree}, ${colorValue1}, ${colorValue2})`;
 
-    const code = `background: linear-gradient(${currentDegree}, ${colorValue1} 0%, ${colorValue2} 100%)`;
+    const code = `background: ${colorValue2}; /* Fallback color */
+background: -webkit-linear-gradient(${currentDegree}, ${colorValue1} 0%, ${colorValue2} 100%); /* Safari and Chrome */
+background: -moz-linear-gradient(${currentDegree}, ${colorValue1} 0%, ${colorValue2} 100%); /* Firefox */
+background: linear-gradient(${currentDegree}, ${colorValue1} 0%, ${colorValue2} 100%); /* Hexadecimal */`;
     const codeHighlight = outputCode;
 
     codeHighlight.innerHTML = code;
-
     Prism.highlightElement(codeHighlight);
   } else if (currentGradient === "radial") {
     element.style.background = `radial-gradient( ${colorValue1}, ${colorValue2})`;
-
-    const code = `background: radial-gradient(${colorValue1} 0%, ${colorValue2} 100%)`;
-    const codeHighlight = outputCode;
-
-    codeHighlight.innerHTML = code;
-
-    Prism.highlightElement(codeHighlight);
+    radialUpdate(colorValue1, colorValue2);
   }
 }
 
@@ -142,8 +149,11 @@ randomizeBtn.addEventListener("click", function () {
   const hex1 = randomColor();
   const hex2 = randomColor();
 
+  colorValue1 = hex1;
+  colorValue2 = hex2;
   color1.value = hex1;
   color2.value = hex2;
+  currentDegree = angle;
 
   element.style.background = `linear-gradient(${angle}, ${hex1} 0%, ${hex2} 100%)`;
 
@@ -157,4 +167,10 @@ background: linear-gradient(${angle}, ${hex1} 0%, ${hex2} 100%); /* Hexadecimal 
   codeHighlight.innerHTML = code;
 
   Prism.highlightElement(codeHighlight);
+});
+/* scroll to section 2 */
+staticBth.addEventListener("click", function () {
+  section2.scrollIntoView({
+    behavior: "smooth",
+  });
 });
