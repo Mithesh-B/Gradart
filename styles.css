@@ -191,7 +191,11 @@ section {
   background-color: #f7e9f2;
   color: #4b4649fd;
 }
-
+.random-btn:active {
+  background-color: #d1ced0;
+  color: #4b4649fd;
+  transform: scale(0.97);
+}
 /* Section 2 Styles */
 .cards {
   position: relative;
@@ -362,6 +366,18 @@ section {
   background-color: rgba(0, 0, 0, 0);
   color: #f7e9f2;
 }
+.angle-1:focus,
+.angle-2:focus,
+.angle-3:focus,
+.angle-4:focus,
+.angle-5:focus,
+.angle-6:focus,
+.angle-7:focus,
+.angle-8:focus,
+.angle-0:focus {
+  background-color: rgba(0, 0, 0, 0);
+  color: #f7e9f2;
+}
 
 /* Gradient Background */
 section {
@@ -414,7 +430,7 @@ section {
   align-self: center;
   z-index: 17;
   overflow: auto;
-  border-radius: 10px;
+  border-radius: 11px;
 }
 
 .part2 .flex {
