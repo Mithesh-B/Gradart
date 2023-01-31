@@ -24603,3 +24603,5 @@ Prism.languages.yang = {
     }
   });
 })();
+
+export default Prism;
