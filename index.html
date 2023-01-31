@@ -24,8 +24,8 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="prism.css" />
-    <script defer src="prism.js"></script>
-    <script defer src="script.js"></script>
+    <script defer src="prism.js" type="module"></script>
+    <script defer src="script.js" type="module"></script>
 
     <link
       rel="stylesheet"
@@ -119,7 +119,7 @@
               type="text"
               class="coloris instance2"
               id="color1"
-              value="#2a9d8f"
+              value="#ca012f"
             />
           </div>
 
@@ -155,11 +155,10 @@
       <div class="codeblock">
         <pre
           class="line-numbers"
-        ><code class="language-css">background: linear-gradient(to right, rgb(42, 157, 143), rgb(244, 162, 97));/* in RGB */
-background: #a8ff78;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-</code
+        ><code id="css-code" class="language-css">background: #f4a261; /* Fallback color */
+background: -webkit-linear-gradient(135deg, #2a9d8f 0%, #f4a261 100%); /* Safari and Chrome */
+background: -moz-linear-gradient(135deg, #2a9d8f 0%, #f4a261 100%); /* Firefox */
+background: linear-gradient(135deg, #2a9d8f 0%, #f4a261 100%); /* Hexadecimal */`</code
         >
       </pre>
       </div>
@@ -186,28 +185,7 @@ background: linear-gradient(to bottom, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, 
 
       /** Instances **/
 
-      Coloris.setInstance(".instance1", {
-        theme: "pill",
-        themeMode: "light",
-        formatToggle: true,
-        closeButton: true,
-        clearButton: true,
-        swatches: [
-          "#067bc2",
-          "#84bcda",
-          "#80e377",
-          "#ecc30b",
-          "#f37748",
-          "#d56062",
-        ],
-      });
-
       Coloris.setInstance(".instance2", { theme: "polaroid" });
-
-      Coloris.setInstance(".instance3", {
-        theme: "polaroid",
-        swatchesOnly: true,
-      });
     </script>
   </body>
 </html>
