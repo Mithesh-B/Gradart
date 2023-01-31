@@ -3,7 +3,7 @@ A CSS color gradient generator built with vanilla JS, html, CSS, coloris, prism.
 
 Color picker used https://github.com/mdbassit/Coloris NPM https://www.npmjs.com/package/@melloware/coloris 
 
-https://prismjs.com/ used for syntax highlighting
+https://prismjs.com/ used for syntax highlighting NPM https://www.npmjs.com/package/prismjs
 
 
 
