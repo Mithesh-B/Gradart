@@ -607,3 +607,13 @@ span {
     font-size: 5px;
   }
 }
+@media only screen and (max-width: 412px) {
+  .card-1,
+  .card-2,
+  .card-3,
+  .card-4 {
+    width: 100px;
+    height: 100px;
+    margin: 10px 10px;
+  }
+}
