@@ -28,6 +28,8 @@ section {
 
 .title {
   position: relative;
+  z-index: 16;
+  position: relative;
   width: 90%;
   margin: 0 auto;
   z-index: 2;
@@ -35,6 +37,8 @@ section {
   color: #f7e9f2;
 }
 .heading {
+  position: relative;
+  z-index: 17;
   padding-top: 100px;
   font-size: 60px;
   width: auto;
@@ -43,10 +47,14 @@ section {
   margin-bottom: -30px;
 }
 .subheading {
+  position: relative;
+  z-index: 18;
   font-size: 40px;
   margin-bottom: 20px;
 }
 .description {
+  position: relative;
+  z-index: 19;
   text-align: left;
   font-size: 13pt;
   line-height: 1.5;
@@ -172,6 +180,8 @@ section {
 
 .animated-btn,
 .random-btn {
+  position: relative;
+  z-index: 19;
   font-weight: 400;
   color: #f7e9f2;
   padding: 10px 20px;
@@ -200,7 +210,7 @@ section {
 /* Section 2 Styles */
 .cards {
   position: relative;
-  z-index: 14;
+  z-index: 15;
   display: flex;
   flex-wrap: wrap;
   opacity: 1;
@@ -605,7 +615,7 @@ span {
   }
 
 }
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 420px) {
   .card-1,
   .card-2,
   .card-3,
@@ -615,4 +625,34 @@ span {
     margin: 10px 10px;
   }
 }
-
+@media only screen and (max-width: 520px) {
+  .frosted-1 {
+     background: linear-gradient(
+    90deg,
+    rgba(64, 4, 124, 0.384) 0%,
+    rgba(7, 242, 156, 0.397) 100%
+  );
+    left: -30vh;
+    top: -10vh;
+    width: 55vh;
+    height: 55vh;
+  }
+  .frosted-2 {
+    left: 15vh;
+    top:-10vh;
+    width: 25vh;
+    height: 25vh;
+  }
+  .frosted-3 {
+    left: 25vh;
+    top:10vh;
+    width: 10vh;
+    height: 10vh;
+  }
+  .frosted-4 {
+    left: 15vh;
+    top:35vh;
+    width: 7vh;
+    height: 7vh;
+  }
+}
