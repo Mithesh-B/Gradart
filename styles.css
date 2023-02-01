@@ -495,6 +495,7 @@ section {
 span {
   font-weight: 400;
 }
+
 @media only screen and (max-width: 767px) {
   .description {
     padding-right: 0%;
@@ -577,7 +578,7 @@ span {
     justify-content: center;
     align-self: center;
     gap: 10px;
-    row-gap: 25px;
+    row-gap: 20px;
   }
   .angle::before,
   .angle::after {
@@ -602,12 +603,9 @@ span {
   .copycode {
     margin-left: 0px;
   }
-  code[class*="language-"],
-  pre[class*="language-"] {
-    font-size: 5px;
-  }
+
 }
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 430px) {
   .card-1,
   .card-2,
   .card-3,
@@ -617,3 +615,4 @@ span {
     margin: 10px 10px;
   }
 }
+
