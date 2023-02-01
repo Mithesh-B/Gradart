@@ -11,13 +11,13 @@ pre[class*="language-"] {
   color: #ccc;
   background: none;
 
-  font-size: 1em;
+  font-size: 0.9em;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
   word-break: normal;
   word-wrap: normal;
-  line-height: 1.5;
+
 
   -moz-tab-size: 4;
   -o-tab-size: 4;
