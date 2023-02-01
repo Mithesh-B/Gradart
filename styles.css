@@ -167,6 +167,8 @@ section {
 }
 
 .static-btn {
+  position: relative;
+  z-index: 20;
   font-weight: 400;
   color: #4b4649fd;
   padding: 10px 20px;
