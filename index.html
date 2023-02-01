@@ -34,6 +34,9 @@
     <script src="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.js"></script>
     <style type="text/css">
       input {
+        display: grid;
+  grid-template-columns: 1fr 1fr;
+        grid-area: input ;
         font-weight: 400;
         color: #4b4649fd;
         padding: 10px 20px;
@@ -85,10 +88,9 @@
           <div class="frosted-4"></div>
           <p class="description">
             Gradart is a user-friendly and efficient website that offers a
-            convenient way to<br />create beautiful gradient backgrounds for
-            your website. It's a simple and<br />straightforward tool that
-            allows you to experiment with different color combinations<br />
-            and create unique and visually appealing gradients.
+            convenient way to create beautiful gradient backgrounds for
+            your website. It's a simple and straightforward tool that
+            allows you to experiment with different color combinations and create unique and visually appealing gradients.
           </p>
 
           <div>
@@ -131,7 +133,7 @@
               value="#f4a261"
             />
           </div>
-          <div>
+          <div id="random">
             <button class="random-btn">randomize gradient</button>
           </div>
         </div>
