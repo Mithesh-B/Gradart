@@ -615,7 +615,6 @@ span {
   .copycode {
     margin-left: 0px;
   }
-
 }
 @media only screen and (max-width: 420px) {
   .card-1,
@@ -629,11 +628,11 @@ span {
 }
 @media only screen and (max-width: 520px) {
   .frosted-1 {
-     background: linear-gradient(
-    90deg,
-    rgba(64, 4, 124, 0.384) 0%,
-    rgba(7, 242, 156, 0.397) 100%
-  );
+    background: linear-gradient(
+      90deg,
+      rgba(64, 4, 124, 0.384) 0%,
+      rgba(7, 242, 156, 0.397) 100%
+    );
     left: -30vh;
     top: -10vh;
     width: 55vh;
@@ -641,19 +640,19 @@ span {
   }
   .frosted-2 {
     left: 15vh;
-    top:-10vh;
+    top: -10vh;
     width: 25vh;
     height: 25vh;
   }
   .frosted-3 {
     left: 25vh;
-    top:10vh;
+    top: 10vh;
     width: 10vh;
     height: 10vh;
   }
   .frosted-4 {
     left: 15vh;
-    top:35vh;
+    top: 35vh;
     width: 7vh;
     height: 7vh;
   }
