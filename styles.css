@@ -513,8 +513,8 @@ span {
 .card-2,
 .card-3,
 .card-4 {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   margin: 10px 10px;
 }
 .generator-heading,.generator-text{
