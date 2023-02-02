@@ -1,5 +1,5 @@
 # GradArt
-A CSS color gradient generator built with vanilla JS, html, CSS, coloris, prism.
+A CSS color gradient generator built with vanilla JS, html, CSS, coloris, prism. Here's a live preview https://mithesh-b.github.io/Gradart/.
 
 Color picker used https://github.com/mdbassit/Coloris, NPM https://www.npmjs.com/package/@melloware/coloris. 
 
