@@ -1,10 +1,33 @@
 # GradArt
-A CSS color gradient generator built with vanilla JS, html, CSS, coloris, prism. Here's a live preview https://mithesh-b.github.io/Gradart/.
+GradArt is a CSS color gradient generator built using vanilla JavaScript, HTML, CSS, Coloris, and Prism. It provides users with a simple and intuitive interface for creating stunning color gradients for their web projects. With GradArt, you can easily pick and choose from a variety of colors to create your own custom gradients with just a few clicks.
 
-Color picker used https://github.com/mdbassit/Coloris, NPM https://www.npmjs.com/package/@melloware/coloris. 
+## Table of Contents
+- Features
+- Installation
+- Usage
+- Contribution
+- Support
 
-https://prismjs.com/ used for syntax highlighting, NPM https://www.npmjs.com/package/prismjs.
+## Features
+Vanilla JavaScript, HTML, and CSS for a lightweight and fast user experience
+Coloris color picker for easy color selection and customization
+Prism for syntax highlighting to make your gradient code easy to read and integrate into your projects
+Live preview of your gradient as you create it
+Generates CSS code ready to be copied and pasted into your project
+## Installation
+You can use GradArt directly from the live preview. No installation is required.
 
+## Usage
+Select your colors using the Coloris color picker
+Adjust the angle and direction of your gradient as desired
+Copy the generated CSS code and paste it into your project
+Contribution
+If you would like to contribute to the development of GradArt, please feel free to submit pull requests or report bugs through the project's GitHub page.
 
+## Support
+For any questions or issues with GradArt, please use the GitHub page to open an issue.
 
-![screencapture-127-0-0-1-5500-index-html-2023-01-31-12_48_53](https://user-images.githubusercontent.com/115478939/215692630-1a13abc2-41f1-42d9-ae1e-a0d9ce5083ef.png)
+## License
+GradArt uses the MIT License. The Coloris and Prism libraries are also licensed under MIT.
+
+![project image](https://user-images.githubusercontent.com/115478939/215692630-1a13abc2-41f1-42d9-ae1e-a0d9ce5083ef.png)
