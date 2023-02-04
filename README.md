@@ -20,11 +20,9 @@ Generates CSS code ready to be copied and pasted into your project
 You can use GradArt directly from the [live preview](https://mithesh-b.github.io/Gradart/). No installation is required.
 
 ## Usage
-Select your colors using the Coloris color picker or use randomizer.
-
-Adjust the angle and direction of your gradient as desired.
-
-Copy the generated CSS code and paste it into your project CSS file.
+- Select your colors using the Coloris color picker or use randomizer.
+- Adjust the angle and direction of your gradient as desired.
+- Copy the generated CSS code and paste it into your project CSS file.
 
 ## Contribution
 If you would like to contribute to the development of GradArt, please feel free to submit pull requests or report bugs through the project's GitHub page.
