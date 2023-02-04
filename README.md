@@ -31,7 +31,7 @@ If you would like to contribute to the development of GradArt, please feel free 
 For any questions or issues with GradArt, please use the GitHub page to open an issue.
 
 ## License
-GradArt uses the MIT License. The Coloris and Prism libraries are also licensed under MIT.
+GradArt uses the GNU General Public License v3.0. The Coloris and Prism libraries are also licensed under MIT.
 For more information on Coloris and Prism, visit the official NPM pages for [Coloris](https://www.npmjs.com/package/@melloware/coloris) and [Prism](https://www.npmjs.com/package/prismjs).
 
 ![project image](https://user-images.githubusercontent.com/115478939/215692630-1a13abc2-41f1-42d9-ae1e-a0d9ce5083ef.png)
