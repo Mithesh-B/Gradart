@@ -13,9 +13,9 @@ GradArt is a CSS color gradient generator built using vanilla JavaScript, HTML, 
 2. Coloris color picker for easy color selection and customization.
 3. Prism for syntax highlighting to make your gradient code easy to read and integrate into your projects.
 4. Live preview of your gradient as you create it.
-5. You get to choose from 9 different gradient angles and 2 color gradient picker.
+5. You get to choose from 9 different gradient angles and 2 color gradient options.
 6. There is a gradient randomizer which can help you in creating gradients.
-Generates CSS code ready to be copied and pasted into your project.
+7. Generates CSS code ready to be copied and pasted into your project.
 
 ## Installation
 You can use GradArt directly from the [live preview](https://mithesh-b.github.io/Gradart/). No installation is required.
