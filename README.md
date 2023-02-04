@@ -17,7 +17,7 @@ You get to choose from 9 different gradient angles and 2 color gradient picker
 There is a gradient randomizer which can help you in creating gradients
 Generates CSS code ready to be copied and pasted into your project
 ## Installation
-You can use GradArt directly from the [live preview](https://mithesh-b.github.io/Gradart/) No installation is required.
+You can use GradArt directly from the [live preview](https://mithesh-b.github.io/Gradart/). No installation is required.
 
 ## Usage
 Select your colors using the Coloris color picker
