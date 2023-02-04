@@ -13,6 +13,8 @@ Vanilla JavaScript, HTML, and CSS for a lightweight and fast user experience
 Coloris color picker for easy color selection and customization
 Prism for syntax highlighting to make your gradient code easy to read and integrate into your projects
 Live preview of your gradient as you create it
+You get to choose from 9 different gradient angles and 2 color gradient picker
+There is a gradient randomizer which can help you in creating gradients
 Generates CSS code ready to be copied and pasted into your project
 ## Installation
 You can use GradArt directly from the live preview. No installation is required.
