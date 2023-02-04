@@ -34,4 +34,7 @@ For any questions or issues with GradArt, please use the GitHub page to open an 
 GradArt uses the GNU General Public License v3.0. The Coloris and Prism libraries are licensed under MIT.
 For more information on Coloris and Prism, visit the official NPM pages for [Coloris](https://www.npmjs.com/package/@melloware/coloris) and [Prism](https://www.npmjs.com/package/prismjs).
 
+## Copyright
+Copyright © Mithesh. All rights reserved.
+
 ![project image](https://user-images.githubusercontent.com/115478939/215692630-1a13abc2-41f1-42d9-ae1e-a0d9ce5083ef.png)
