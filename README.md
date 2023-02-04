@@ -20,10 +20,13 @@ Generates CSS code ready to be copied and pasted into your project
 You can use GradArt directly from the [live preview](https://mithesh-b.github.io/Gradart/). No installation is required.
 
 ## Usage
-Select your colors using the Coloris color picker
-Adjust the angle and direction of your gradient as desired
-Copy the generated CSS code and paste it into your project
-Contribution
+Select your colors using the Coloris color picker or use randomizer.
+
+Adjust the angle and direction of your gradient as desired.
+
+Copy the generated CSS code and paste it into your project CSS file.
+
+## Contribution
 If you would like to contribute to the development of GradArt, please feel free to submit pull requests or report bugs through the project's GitHub page.
 
 ## Support
@@ -31,5 +34,6 @@ For any questions or issues with GradArt, please use the GitHub page to open an 
 
 ## License
 GradArt uses the MIT License. The Coloris and Prism libraries are also licensed under MIT.
+For more information on Coloris and Prism, visit the official NPM pages for [Coloris](https://www.npmjs.com/package/@melloware/coloris) and [Prism](https://www.npmjs.com/package/prismjs).
 
 ![project image](https://user-images.githubusercontent.com/115478939/215692630-1a13abc2-41f1-42d9-ae1e-a0d9ce5083ef.png)
