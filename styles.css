@@ -507,7 +507,14 @@ section {
 span {
   font-weight: 400;
 }
-
+footer {
+  font-weight: 200;
+  color: #f7e9f2;
+  text-align: right;
+  font-size: 15px;
+  padding-top: 20px;
+  padding-right: 40px;
+}
 @media only screen and (max-width: 767px) {
   .description {
     padding-right: 0%;
@@ -614,6 +621,10 @@ span {
   }
   .copycode {
     margin-left: 0px;
+  }
+  footer {
+    padding-top: 5px;
+    padding-right: 0px;
   }
 }
 @media only screen and (max-width: 420px) {
