@@ -33,13 +33,12 @@ section {
   width: 90%;
   margin: 0 auto;
   z-index: 2;
-
   color: #f7e9f2;
 }
 .heading {
   position: relative;
   z-index: 17;
-  padding-top: 100px;
+  padding-top: 80px;
   font-size: 60px;
   width: auto;
   font-weight: 900;
@@ -63,15 +62,13 @@ section {
   padding-right: 45%;
 }
 
-.frosted-1:hover {
-  transform: scale(1.02);
-}
+
+.frosted-1:hover,
 .frosted-2:hover {
   transform: scale(1.02);
 }
-.frosted-3:hover {
-  transform: scale(1.2);
-}
+
+.frosted-3:hover,
 .frosted-4:hover {
   transform: scale(1.2);
 }
@@ -90,15 +87,13 @@ section {
   );
   backdrop-filter: blur(10px);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
   border-color: black;
-
   width: 100vh;
   height: 100vh;
-
   padding: 10px;
   border-radius: 50%;
 }
+
 .frosted-2 {
   transition: all 300ms ease-in;
   top: -30vh;
@@ -113,15 +108,13 @@ section {
   );
   backdrop-filter: blur(10px);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
   border-color: black;
-
   width: 50vh;
   height: 50vh;
-
   padding: 10px;
   border-radius: 50%;
 }
+
 .frosted-3 {
   transition: all 300ms ease-in;
   top: 40vh;
@@ -134,18 +127,15 @@ section {
     rgba(252, 170, 93, 0.267) 0%,
     rgba(238, 185, 71, 0.082) 100%
   );
-
   backdrop-filter: blur(8px);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
   border-color: black;
-
   width: 11vh;
   height: 11vh;
-
   padding: 10px;
   border-radius: 50%;
 }
+
 .frosted-4 {
   transition: all 300ms ease-in;
   top: 10vh;
@@ -156,12 +146,9 @@ section {
   background: rgba(136, 136, 136, 0.178);
   backdrop-filter: blur(8px);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
   border-color: black;
-
   width: 15vh;
   height: 15vh;
-
   padding: 10px;
   border-radius: 50%;
 }
@@ -189,7 +176,6 @@ section {
   padding: 10px 20px;
   border-radius: 50px;
   background-color: #fcfcfc00;
-
   cursor: pointer;
   border: 1.5px solid black;
   border-color: #f7e9f2;
@@ -204,6 +190,7 @@ section {
   background-color: #f7e9f2;
   color: #4b4649fd;
 }
+
 .random-btn:active {
   background-color: #d1ced0;
   color: #4b4649fd;
@@ -220,6 +207,7 @@ section {
   align-items: center;
   padding-top: 50px;
 }
+
 .card-1 {
   background-image: linear-gradient(
     to right bottom,
@@ -237,6 +225,7 @@ section {
     #d60e8a
   );
 }
+
 .card-2 {
   background-image: linear-gradient(
     to right bottom,
@@ -306,6 +295,7 @@ section {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
+
 .pcard {
   font-size: 12px;
 
@@ -321,7 +311,6 @@ section {
     )
     100% 1;
 }
-/* Section 3 Styles */
 
 .generator-heading {
   margin-left: 40px;
@@ -330,11 +319,11 @@ section {
   color: #f7e9f2;
   font-size: 34px;
   text-align: center;
-
   padding-top: 40px;
   border-top: 2px solid;
   border-color: #f7e9f248;
 }
+
 .generator-text {
   margin-left: 40px;
   margin-right: 40px;
@@ -342,7 +331,6 @@ section {
   color: #f7e9f2;
   font-size: 13pt;
   font-weight: 300;
-
   margin-bottom: 74px;
 }
 
@@ -364,9 +352,9 @@ section {
   margin-right: 10px;
   cursor: pointer;
   border: 1.5px solid black;
-
   border-color: #f7e9f2;
 }
+
 .angle-1:hover,
 .angle-2:hover,
 .angle-3:hover,
@@ -379,6 +367,7 @@ section {
   background-color: rgba(0, 0, 0, 0);
   color: #f7e9f2;
 }
+
 .angle-1:focus,
 .angle-2:focus,
 .angle-3:focus,
@@ -395,7 +384,6 @@ section {
 /* Gradient Background */
 section {
   padding-top: 0px;
-
   background-image: linear-gradient(
     159deg,
     #fe4b4e 0%,
@@ -414,13 +402,11 @@ section {
   grid-template-areas:
     "color-box angle"
     "color-box flex";
-
   grid-gap: 10px;
 }
 
 .part2 .color-box {
   grid-area: color-box; /* span across both grid 1 and grid 3 */
-
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   height: 250px;
@@ -432,10 +418,10 @@ section {
   overflow: auto;
   border-radius: 10px;
 }
+
 .part2 .color-box2 {
   grid-area: color-box; /* span across both grid 1 and grid 3 */
   background-color: rgb(255, 255, 255);
-
   height: 250px;
   width: 80%;
   padding: 10px;
@@ -451,13 +437,11 @@ section {
   display: flex;
   align-items: flex-end;
   justify-content: left;
-
   gap: 30px;
 }
 
 .part2 .angle {
   grid-area: angle;
-
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -484,17 +468,20 @@ section {
 .angle-0:nth-child(n) {
   order: 1;
 }
+
 .codeblock {
   display: flex;
   justify-content: left;
   margin-left: 40px;
   margin-right: 40px;
 }
+
 .line-numbers {
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
+
 .copycode {
   text-align: left;
   margin-left: 40px;
@@ -507,6 +494,7 @@ section {
 span {
   font-weight: 400;
 }
+
 footer {
   font-weight: 200;
   color: #f7e9f2;
@@ -515,6 +503,7 @@ footer {
   padding-top: 20px;
   padding-right: 40px;
 }
+
 @media only screen and (max-width: 767px) {
   .description {
     padding-right: 0%;
@@ -554,7 +543,6 @@ footer {
   }
   .part2 {
     display: grid;
-
     justify-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
