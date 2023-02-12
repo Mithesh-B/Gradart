@@ -96,7 +96,7 @@
 
           <div>
             <button class="static-btn">2 color static</button>
-            <button class="animated-btn">animated</button>
+            <button class="animated-btn" onclick="comingSoon()">animated</button>
           </div>
         </div>
       </div>
@@ -192,6 +192,10 @@ background: linear-gradient(135deg, #2a9d8f 0%, #f4a261 100%); /* Hexadecimal */
       /** Instances **/
 
       Coloris.setInstance(".instance2", { theme: "polaroid" });
+
+      function comingSoon(){
+  document.querySelector(".animated-btn").innerHTML="Coming soon"
+}
     </script>
      
   </body>
