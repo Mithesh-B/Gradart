@@ -9,6 +9,8 @@ GradArt is a CSS color gradient generator built using vanilla JavaScript, HTML, 
 - Usage
 - Contribution
 - Support
+- License
+- Copyright
 
 ## Features
 1. Vanilla JavaScript, HTML, and CSS for a lightweight and fast user experience.
